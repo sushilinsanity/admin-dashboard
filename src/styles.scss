@@ -1,1 +1,135 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+// font-awesome file
+@import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+// presets
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+.container-fluid,
+.row,
+.col-sm-2,
+.col-sm-10,
+.col-sm-12 {
+  padding: 0;
+  margin: 0;
+}
+
+// text colors
+.text-dark {
+  color: #181c32 !important;
+}
+
+.text-muted {
+  color: #b5b5c3 !important;
+}
+
+.text-dark-75 {
+  color: #3f4254 !important;
+}
+
+// font size
+.font-size-sm {
+  font-size: 0.825rem;
+}
+
+.font-size {
+  font-size: 0.95rem;
+}
+
+.font-size-lg {
+  font-size: 1.2rem;
+}
+
+.icon-xl {
+  font-size: 1.4rem !important;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+// bg colors
+.bg-primary {
+  background-color: #3699ff !important;
+}
+
+.bg-success {
+  background-color: #1bc5bd !important;
+}
+
+.bg-warning {
+  background-color: #ffa800 !important;
+}
+
+.bg-light-primary {
+  background-color: #e1f0ff;
+}
+
+.bg-light-success {
+  background-color: #c9f7f5;
+}
+
+.bg-light-warning {
+  background-color: #fff4de;
+}
+
+.bg-light-danger {
+  background-color: #ffe2e5;
+}
+
+// card
+.custom-card {
+  background-clip: border-box;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  border: 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  align-items: center;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  padding: 2rem 2.25rem;
+}

@@ -1,0 +1,186 @@
+<div class="row">
+  <div class="col-sm-11">
+    <div class="offset-sm-1">
+      <div class="row col-sm-12 m-3">
+        <div class="col-sm-4">
+          <app-chart color="#F64E60" infoShow="false"></app-chart>
+        </div>
+
+        <div class="col-sm-4 px-2">
+          <div class="custom-card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <span class="font-weight-500 text-dark font-size-lg">Recent Activities</span>
+                <span class="text-muted font-size-sm">45 Episodes</span>
+              </h3>
+              <div class="card-toolbar"></div>
+            </div>
+  
+            <div class="card-body pt-4">
+              <div class="timeline timeline-6 mt-3">
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    08:42
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-warning icon-xl"></i>
+                  </div>
+                  <div
+                    class="font-weight-mormal font-size timeline-content text-muted pl-3"
+                  >
+                    Best way to start the day is to watch an Anime
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    10:00
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-success icon-xl"></i>
+                  </div>
+                  <div class="timeline-content d-flex">
+                    <span class="font-weight-500 text-dark-75 pl-3 font-size"
+                      >TSDS Epidoes</span
+                    >
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    14:37
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-danger icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-500 font-size text-dark-75 pl-3"
+                  >
+                    Released episode <a href="#" class="text-primary">967</a>. of
+                    One Piece
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    16:50
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-primary icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-mormal font-size text-muted pl-3"
+                  >
+                    Epic anime fights are coming soon, epic showdown awaiting
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    21:03
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-danger icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-500 text-dark-75 pl-3 font-size"
+                  >
+                    New episode arrived
+                    <a href="#" class="text-primary">#TPN-2-07</a>.
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    23:07
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-info icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-mormal font-size text-muted pl-3"
+                  >
+                    Fear is necessary for evolution. The fear that one could be
+                    destroyed at any moment
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    16:50
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-primary icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-mormal font-size text-muted pl-3"
+                  >
+                    Fighting at the edge of insanity, waiting to be consumed with
+                    rage
+                  </div>
+                </div>
+                <div class="timeline-item align-items-start">
+                  <div
+                    class="timeline-label font-weight-500 text-dark-75 font-size"
+                  >
+                    21:03
+                  </div>
+                  <div class="timeline-badge">
+                    <i class="fas fa-genderless text-danger icon-xl"></i>
+                  </div>
+                  <div
+                    class="timeline-content font-weight-500 font-size text-dark-75 pl-3"
+                  >
+                    Episode release <a href="#" class="text-primary">#OP-980</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <app-chart color="#56D6D0" infoShow="true"></app-chart>
+          <app-chart color="#83C0FF" infoShow="true"></app-chart>
+        </div>
+      </div>
+
+      <div class="row col-sm-12 m-3 mt-4">
+        <div class="col-sm-4">
+          <div class="custom-card px-3">
+            <div class="card-header border-0">
+              <span class="card-title font-weight-500 font-size-lg text-dark">Todo</span>
+            </div>
+            <div class="card-body pt-2">
+              <div class="d-flex align-items-center mb-4" *ngFor="let task of tasks">
+                <span class="bullet bullet-bar align-self-stretch"
+                  [ngClass]="{'bg-success': task.color ==='success', 'bg-primary': task.color === 'primary', 'bg-warning': task.color === 'warning'}"></span>
+                <label class="checkbox checkbox-lg checkbox-single flex-shrink-0 m-0 mx-3"
+                  [ngClass]="{'checkbox-light-success': task.color === 'success', 'checkbox-light-primary': task.color === 'primary', 'checkbox-light-warning': task.color === 'warning'}">
+                  <input type="checkbox" name="" value="1">
+                  <span></span>
+                </label>
+                <div class="d-flex flex-column flex-grow-1">
+                  <a class="text-dark-75 text-hover-primary font-weight-500 cursor-pointer"> {{task.name}} </a>
+                  <span class="text-muted font-weight-500"> {{task.duration}} </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-8 pl-0">
+          <app-dashboard-table></app-dashboard-table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

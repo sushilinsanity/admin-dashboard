@@ -1,0 +1,14 @@
+ul li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+mat-toolbar {
+  margin-left: 20%;
+  width: 80%;
+}

@@ -1,0 +1,34 @@
+.label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.label.label-inline.label-lg {
+  padding: 0.9rem 0.75rem;
+}
+
+.label-light-primary {
+  color: #3699ff;
+  background-color: #e1f0ff;
+}
+
+.label-light-warning {
+  color: #ffa800;
+  background-color: #fff4de;
+}
+
+.label-light-success {
+  color: #1bc5bd;
+  background-color: #c9f7f5;
+}
+
+.label-light-danger {
+  color: #f64e60;
+  background-color: #ffe2e5;
+}

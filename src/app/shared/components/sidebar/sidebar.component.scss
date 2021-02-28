@@ -1,0 +1,42 @@
+:host {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+  .header-text {
+    margin: 0;
+    color: #fff;
+  }
+  h2,
+  h3 {
+    color: #a2a3b3;
+  }
+  .mat-list-base .mat-subheader {
+    color: #494b74;
+  }
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #494b74;
+  }
+  .profile-card {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  a span {
+    color: #a2a3b3;
+    font-size: 0.9rem;
+  }
+}
